@@ -1,1 +1,1 @@
-# core
+@algotech/core

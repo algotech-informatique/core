@@ -1,0 +1,1 @@
+export type IndexStatus = 'reIndex' | 'indexed' | 'deleted' | 'error';

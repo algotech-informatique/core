@@ -1,0 +1,1 @@
+export { ThemeDto } from './theme.dto';

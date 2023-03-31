@@ -1,0 +1,1 @@
+export { WsUserDto } from './ws-user.dto';

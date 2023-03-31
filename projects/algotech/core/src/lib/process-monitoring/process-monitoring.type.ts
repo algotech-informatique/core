@@ -1,0 +1,1 @@
+export type ProcessMonitoringType = 'importSos' | 'indexationSos' | 'importDoc' | 'indexationDoc' | 'importI18n' | 'deleteSos';

@@ -1,0 +1,1 @@
+export { MetaDatasDto } from './metadatas.dto';
