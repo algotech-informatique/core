@@ -1,9 +1,6 @@
 import { DateRangeDto } from '../base';
 import { IsDefined, IsString, IsBoolean, ValidateNested, IsArray, IsOptional } from 'class-validator';
 import { Type } from 'class-transformer';
-import { SmartTaskDayofWeekDto } from './smart-task-day-week.dto';
-import { SmartTaskMonthOfYearDto } from './smart-task-month-year.dto';
-import { SmartTaskDayofMonthDto } from './smart-task-day-month.dto';
 import { SmartTaskRepetitionDto } from './smart-task-repetition.dto';
 import { SmartTaskHourOfDayDto } from './smart-task-hour-day.dto';
 
@@ -24,22 +21,16 @@ export class SmartTaskPeriodicityDto {
     // permet de choisir si on veux répeter le process un  ou plusieurs jours spécifique de la semaine (tableau de valeur de  1-7)
     @IsOptional()
     @IsArray()
-    @ValidateNested()
-    @Type(() => SmartTaskDayofWeekDto)
-    daysOftheWeek?: SmartTaskDayofWeekDto[];
+    daysOftheWeek?: number[];
 
     // permet de choisir si on veux répeter le process un  ou plusieurs jours spécifique du mois ( ableau de valeur 1- 31)
     @IsOptional()
     @IsArray()
-    @ValidateNested()
-    @Type(() => SmartTaskDayofMonthDto)
-    daysOftheMonth?: SmartTaskDayofMonthDto[];
+    daysOftheMonth?: number[];
 
     @IsOptional()
     @IsArray()
-    @ValidateNested()
-    @Type(() => SmartTaskMonthOfYearDto)
-    monthsOftheYear?: SmartTaskMonthOfYearDto[];
+    monthsOftheYear?: number[];
 
     @IsDefined()
     @IsBoolean()

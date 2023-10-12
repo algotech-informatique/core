@@ -21,6 +21,7 @@ export { SnPageWidgetDto } from './smart-nodes-page-widget.dto';
 export { SnPageBoxDto } from './smart-nodes-page-box.dto';
 export { SnPageEventDto } from './smart-nodes-page-event.dto';
 export { SnPageEventPipeDto } from './smart-nodes-page-event-pipe.dto';
+export { SnPageEventPipeSmartflowResultDto } from './smart-nodes-page-event-pipe-smartflow-result.dto';
 export { SnPageWidgetGroupDto } from './smart-nodes-page-widget-group.dto';
 export { SnPageWidgetConditionDto } from './smart-nodes-page-widget-condition.dto';
 export { SnPageWidgetRuleDto } from './smart-nodes-page-widget-rule.dto';
@@ -29,3 +30,6 @@ export { SnPageWidgetTypeReturnDto } from './smart-nodes-page-widget-type-return
 export { SnAppDto } from './smart-nodes-app.dto';
 
 export { SnViewType } from './smart-nodes-view-type.dto';
+
+export {SnSynoticSearchDto} from './smart-nodes-synoptic-search.dto'
+export {SnSynoticSearchQueryDto} from './smart-nodes-synoptic-search-query.dto'

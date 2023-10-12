@@ -1,4 +1,4 @@
-import { IsBoolean, IsDefined, IsString } from "class-validator";
+import { IsBoolean, IsDefined, IsOptional, IsString } from "class-validator";
 
 // @dynamic
 export class EnvironmentParameterDto {
@@ -13,4 +13,8 @@ export class EnvironmentParameterDto {
     @IsBoolean()
     @IsDefined()
     active: boolean;
+
+    @IsBoolean()
+    @IsOptional()
+    password?: boolean;
 }

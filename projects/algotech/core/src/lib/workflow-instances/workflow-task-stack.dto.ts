@@ -1,4 +1,4 @@
-import { IsUUID, IsDefined, IsArray, ValidateNested, IsBoolean, IsOptional } from 'class-validator';
+import { IsUUID, IsDefined, IsArray, ValidateNested, IsBoolean, IsOptional, IsString } from 'class-validator';
 import { Type } from 'class-transformer';
 import { WorkflowOperationDto } from './workflow-operation.dto';
 
@@ -19,6 +19,9 @@ export class WorkflowStackTaskDto {
     @Type(() => Date)
     @IsOptional()
     finishDate: string;
+
+    @IsString()
+    transitionKey: string;
 
     @IsArray()
     @IsDefined()
