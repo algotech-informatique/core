@@ -57,3 +57,4 @@ export * from './lib/idexation';
 export * from './lib/import';
 export * from './lib/process-monitoring';
 export * from './lib/i18n';
+export * from './lib/information';

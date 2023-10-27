@@ -35,6 +35,14 @@ export class CustomerDto extends BaseModel {
     licenceKey: string;
 
     @IsOptional()
+    @IsString()
+    restoreId?: string;
+
+    @IsOptional()
+    @IsString()
+    version?: string;
+
+    @IsOptional()
     @ValidateNested()
     @Type(() => CustomerOAuth2Dto)
     oauth2?: CustomerOAuth2Dto;    
