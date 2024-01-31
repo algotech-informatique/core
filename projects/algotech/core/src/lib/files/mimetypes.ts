@@ -705,6 +705,9 @@ export const mimetypes = {
         "jp2",
         "jpg2"
     ],
+    "image/jpeg": [
+        "jpeg",
+    ],
     "image/jpg": [
         "jpeg",
         "jpg",

@@ -25,4 +25,8 @@ export class ImportOptionsDto {
     @ValidateNested()
     @Type(() => PairDto)
     propertiesFormat?: PairDto[];
+
+    @IsOptional()
+    @IsString()
+    encoding?: string;
 }
